@@ -24,3 +24,4 @@ No exemplo realizado, peguei um bilhete com alguns texto e a IA identificou toda
 
 
 * Nesse modulo foi muito importante para saber os serviços que podemos utilizar com a IA da Azure.
+"# Hat_Harry_Potter" 
