@@ -1,11 +1,36 @@
-Projeto em python feito com base na aula de Object-Oriented Programming de CS50P - Python Introduction de Havard.
+Sorting Hat - Projeto em Python
+Este projeto foi desenvolvido com base na aula de Object-Oriented Programming (OOP) do curso CS50P - Python Introduction da Harvard.
+Trata-se de um projeto simples que demonstra como a programação orientada a objetos pode tornar o código mais robusto, organizado e fácil de entender.
 
+Descrição do Projeto
+O objetivo do código é simular o Chapéu Seletor (Sorting Hat) de Harry Potter, atribuindo uma casa de Hogwarts (Gryffindor, Hufflepuff, Ravenclaw ou Slytherin) a um usuário de forma aleatória.
 
-Projeto simples mas mostra bem a importancia da classe para que o codigo se torne mais robusto para um melhor entendimento do programador.
+Como funciona o código?
+O projeto utiliza uma classe chamada Hat, que armazena uma lista de casas de Hogwarts.
+A classe utiliza o método de classe (@classmethod) chamado sort, que seleciona uma casa aleatória da lista com a ajuda da biblioteca random.
+O usuário é solicitado a inserir seu nome, e o código retorna o nome do usuário junto com a casa à qual ele foi designado.
+Detalhes Técnicos
+Classe Hat
+A classe Hat contém um atributo houses, que é uma lista das quatro casas de Hogwarts.
+O método sort é declarado como um @classmethod, o que permite que ele acesse o atributo da classe diretamente usando cls.
+Método @classmethod
+O @classmethod é usado para criar um método que pertence à classe e não a instâncias dela. Isso significa que você não precisa criar um objeto do tipo Hat para usar o método sort.
+O prefixo cls dentro do método representa a própria classe, permitindo o acesso a atributos ou métodos da classe.
+Execução do Código
+Quando o código é executado:
 
-A classe "Hat" é muito importante para o codigo, porque é nela onde é armazenado a lista de casa que o chapeu irá escolher de forma aleatoria com a ajuda da biblioteca "Random".
+O usuário é solicitado a inserir seu nome:
+python
+Copiar
+Editar
+Insert your name to find out which house is yours:
+A função Hat.sort escolhe uma casa de forma aleatória e imprime o resultado:
+csharp
+Copiar
+Editar
+Harry is in Gryffindor
+Conclusão
+Apesar de ser um projeto simples, ele demonstra conceitos importantes de POO, como:
 
-O metodo "classmethod" ajuda a função criada dentro do Hat para que a classe não seja identificada pela função com a abreviação "cls".
-
-No final com a mesma função "Hat" peço ao usuario inserir o nome para que o codigo selecione de forma aleatoria a "casa".
-
+A utilização de classes para encapsular dados e comportamentos.
+A aplicação de métodos de classe para manipular atributos de classe.
